@@ -23,3 +23,5 @@ local.properties
 .settings/
 .loadpath
 
+# unignore
+!/lib/*.js

@@ -9,13 +9,25 @@
 
 ;; -----------------------------------------------------------------------------
 ;; canvas
-(def canvas (.getElementById js/document "canvas"))
+(def canvas-id "canvas")
+(def canvas (.getElementById js/document canvas-id))
 (def screen-width (.-width canvas))
 (def screen-height (.-height canvas))
 (println (str "screen-resolution: " screen-width "x" screen-height))
 
-(def stage (new js/createjs.Stage canvas))
+(def stage (new js/createjs.Stage canvas-id))
 (def shape (new js/createjs.Shape))
+
+(defn draw-shape [x y]
+  (do
+    (.drawCircle (.beginFill (.-graphics shape) "red") 0 0 40)
+    (set! (.-x shape) x)
+    (set! (.-y shape) y)
+    (.addChild stage shape)
+    (.update stage)))
+
+(.log js/console stage)
+(.log js/console shape)
 ;; -----------------------------------------------------------------------------
 ;; game-state
 (def state {:level {}
@@ -26,7 +38,5 @@
 
 ;; -----------------------------------------------------------------------------
 ;; drawing
-
-;var canvas = document.getElementById('canvas');
-;var stage = new createjs.Stage(canvas);
-;var shape = new createjs.Shape();
+(draw-shape 100 100)
+;;(draw-on-stage )
