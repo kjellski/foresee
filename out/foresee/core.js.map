@@ -1,0 +1,14 @@
+{"version":3,
+ "file":
+ "/Users/kjellski/projects/clojure/foresee/out/foresee/core.js",
+ "sources":["core.cljs"],
+ "lineCount":19,
+ "mappings":
+ ";AAKA;;;;AAEA,AAACA;AAKD,AAAKC,oBAAK,yBAAA,2CAAA,uDAAA,2CAAA,6EAAA,wDAAA,mFAAA,MAAA,sBAAA,uDAAA,jdAACC,6NAAqBC;AAIhC,yBAAA,sBAAA,/CAAMC,+CACJ,oXAAA,hXAAMC,QAAM,AAAA,qFAAQ,AAAA,qFAAA,AAAAC,0BAASL,yBACvBM,QAAM,AAAA,qFAAA,AAAAD,0BAASL,oBACnB,OAACO,0BAAM,wBAAA,xBAACE;kBAADD,iBAAA,AAAM,+FAAA,mFAAA,IAAA,/KAACE,wCAAgB,+BAAAF,/BAACG;;CAAiBP;;AAKpD,yBAAA,sBAAA,/CAAMQ,+CACJ,OAACT;;AAGH,wBAAA,qBAAA,7CAAMU,6CACJ,OAACD;;AAEH,AAACC",
+ "names":
+ ["cljs.core/enable-console-print!", "foresee.core/game",
+  "cljs.core/atom", "foresee.drawing/walls", "foresee.core/draw-game",
+  "walls", "cljs.core/deref", "balls", "cljs.core/dorun", "p1__5374#",
+  "cljs.core/map", "foresee.drawing/draw-shape-at",
+  "foresee.drawing/line", "foresee.core/game-loop",
+  "foresee.core/run-game"]}

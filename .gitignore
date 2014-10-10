@@ -2,7 +2,6 @@
 pom.xml
 *jar
 /classes/
-/out/
 /target/
 .lein-deps-sum
 .lein-repl-history
@@ -22,3 +21,5 @@ local.properties
 .settings/
 .loadpath
 
+# light table
+.nrepl-port

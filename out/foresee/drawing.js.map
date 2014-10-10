@@ -1,0 +1,19 @@
+{"version":3,
+ "file":
+ "/Users/kjellski/projects/clojure/foresee/out/foresee/drawing.js",
+ "sources":["drawing.cljs"],
+ "lineCount":49,
+ "mappings":
+ ";AAAA;;AACA,AAACA;AAID,4BAAA,5BAAKC;AACL,AAAKC,yBAAO,AAAiBC,wBAAYF;AACzC,AAAKG,+BAAa,AAASF;AAC3B,AAAKG,gCAAc,AAAUH;AAE7B,AAACI,4BAAQ,CAAA,gGAAA,9BAA2BF,8EAAiBC;AAErD,AAAKE,wBAAM,KAAKC,eAAkBP;AAClC,AAAMQ,YAAWF;AAKjB,wBAAA,mFAAA,mFAAA,IAAA,IAAA,0CAAA,mFAAA,IAAA,iCAAA,YAAA,2KAAA,YAAA,8IAAA,zrBAAKG,0MACuCL,iIACbD,4HAC3BA,6BAAaC,8BAAcD,4HAC3BA,6BAAaC,kCAA2BA;AAK5C,8BAAA,9BAAKM;AACL,iCAAA,jCAAKC;AAEL;;;gCAAA,+BAAA,/DAAMC,wDAEHC,OACD,AACE,AAAWP,+BAAMO;AACjB,OAASP;;AAEb;;;uBAAA,eAAAQ,SAAA,AAAA,IAAAC,YAAAD,iBAAA,AAAAE,wBAAAD,UAAA,IAAA,eAAA,AAAAC,wBAAAD,UAAA,IAAA,eAAA,AAAAC,wBAAAD,UAAA,IAAA,eAAA,AAAAC,wBAAAD,UAAA,IAAA,MAAA,3RAAME,2EAEFC,qDAAGC,qDAAGC,qDAAGC,iDACX,yCAAA,rCAAMC,WAAS,KAAKC,qBAClB,IAAAC,wBAAA,AAAA,AAAAA,TACEF,qCACiBX;AAFnB,AAAAa,yBAAA;AAAA,AAAAA,oBAIWN,GAAGC;AAJd,AAAAK,oBAKWJ,GAAGC;AALdG,AAMA,YAAKC,eAAkBH;;AAE3B;;;uBAAA,iBAAA,xCAAMI,wCAGJ,yCAAA,rCAAMJ,WAAS,KAAKC,qBAClB,IAAAI,wBAAA,AAAA,AAAAA,TACEL,qCACiBX;AAFnB,AAAAgB,yBAAA;AAAA,AAAAA,oBAAA,IAKa,GAAGjB;AALhB,AAAAiB,oBAAA,IAMajB;AANb,AAAAiB,oDAAA,hCAQW,GAAGjB;AARd,AAAAiB,gDAAA,5BASWjB;AATX,AAAAiB,wBAAA,IAAA,IAWmBjB;AAXnBiB,AAYA,YAAKF,eAAkBH;;AAE3B,+BAAA,kCAAA,jEAAMM,sDAAcf,MAAMgB,EAAEC,GAC1B,AACE,AAAM,AAAKjB,UAAOgB;AAClB,AAAM,AAAKhB,UAAOiB;AACpBjB;;AAEF,gCAAA,8BAAAkB,SAAA,AAAA,IAAAC,YAAAD,gBAAA,AAAAf,wBAAAgB,UAAA,IAAA,cAAA,AAAAhB,wBAAAgB,UAAA,IAAA,MAAA,vMAAMC,wDAAepB,2CAAOgB,oDAAEC,gDAC5B,OAAClB,wCAAc,AAACgB,uCAAaf,MAAMgB,EAAEC",
+ "names":
+ ["cljs.core/enable-console-print!", "foresee.drawing/canvas-id",
+  "foresee.drawing/canvas", "js/document",
+  "foresee.drawing/screen-width", "foresee.drawing/screen-height",
+  "cljs.core/println", "foresee.drawing/stage", "js/createjs.Stage",
+  "js/console", "foresee.drawing/walls", "foresee.drawing/ball-radius",
+  "foresee.drawing/line-thickness", "foresee.drawing/draw-on-stage",
+  "shape", "p__5357", "vec__5360", "cljs.core/nth",
+  "foresee.drawing/line", "x1", "y1", "x2", "y2", "graphics",
+  "js/createjs.Graphics", "G__5361", "js/createjs.Shape",
+  "foresee.drawing/ball", "G__5364", "foresee.drawing/set-position",
+  "x", "y", "p__5366", "vec__5368", "foresee.drawing/draw-shape-at"]}
