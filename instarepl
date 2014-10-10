@@ -1,0 +1,23 @@
+;; Anything you type in here will be executed
+;; immediately with the results shown on the
+;; right.
+(defn line [[x1 y1 x2 y2]]
+  [x1 y1 x2 y2])
+
+
+(def walls [(line [0 0 0 screen-height]) ; left
+            (line [0 0 screen-width 0]) ; top
+            (line [screen-width screen-height 0 screen-height]) ; bottom
+            (line [screen-width screen-height screen-width 0])]) ; right
+
+(def game (atom {:level {:walls walls}}))
+
+(println @game)
+
+(def screen-width 10)
+(def screen-height 10)
+
+
+;; (defn game-loop []
+;;   (let [position (map vec (partition 2 (interleave (range 0 1000 10) (range 0 1000 10))))]
+;;     (dorun (map #(d/draw-shape-at (d/ball 20) %) position))))
