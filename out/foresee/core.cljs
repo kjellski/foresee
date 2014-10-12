@@ -12,7 +12,7 @@
 
 (def game (atom {:level {:walls d/walls
                          :spawn [300 200]}
-                 :balls [[150 200] [150 250] [100 300]]}))
+                 :balls [[300 200]]}))
 
 (defn draw-game []
   (let [walls (:walls (:level @game))

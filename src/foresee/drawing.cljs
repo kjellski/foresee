@@ -7,10 +7,21 @@
 (def canvas (.getElementById js/document canvas-id))
 (def screen-width (.-width canvas))
 (def screen-height (.-height canvas))
+(def ticker js/createjs.Ticker)
 
 (println (str "screen-resolution: " screen-width "x" screen-height))
 
-(def stage (new js/createjs.Stage canvas-id))
+(defn add-event-listener [target event-name f]
+  (.addEventListener target event-name f))
+
+(defn event-listeners []
+  (.addEventListener  "tick" (fn [e](.log js/console e))))
+;; (.removeAllEventListeners ticker)
+(add-event-listener ticker "tick" (fn [e] (.log js/console e)))
+(def stage (let [stage-tmp (new js/createjs.Stage canvas-id)]
+             (.enableMouseOver stage-tmp)
+             (.-name "MainStage")
+             stage-tmp))
 (.log js/console stage)
 
 ;; -----------------------------------------------------------------------------
