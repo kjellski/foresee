@@ -26,7 +26,7 @@
 ;; -----------------------------------------------------------------------------
 ;; drawing
 (def ball-radius 20)
-(def line-thickness 5)
+(def line-thickness 1)
 
 (defn draw-on-stage
   "draws given shape on stage"
@@ -62,6 +62,7 @@
       (.moveTo (- ball-radius) 0)
       (.lineTo ball-radius 0)
       ; the circle
+      (.setStrokeStyle (inc line-thickness))
       (.drawCircle 0 0 ball-radius))
     (new js/createjs.Shape graphics)))
 

@@ -12,15 +12,17 @@
 
 (def game (atom {:level {:walls d/walls
                          :spawn [300 200]}
-                 :balls []}))
+                 :balls [[150 200] [150 250] [100 300]]}))
 
 (defn draw-game []
   (let [walls (:walls (:level @game))
-        balls (:balls @game)]
-    (dorun (map #(d/draw-shape-at (d/line %) [0 0]) walls))
-    ;(dorun (map #(d/ball %) balls))
+        spawn (:spawn (:level @game))
+        balls (:balls @game)
+        draw (fn [shape position]
+               (d/draw-shape-at shape position))]
+    (dorun (map #(draw (d/line %) [0 0]) walls))
+    (dorun (map #(draw (d/ball) %) balls))
     ))
-
 
 (defn game-loop []
   (draw-game))
